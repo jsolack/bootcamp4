@@ -7,9 +7,13 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <slot></slot>
+      <slot name="link1"></slot>
+      <slot name="link2"></slot>
+      <slot name="link3"></slot>
+      <slot name="link4"></slot>
+      <slot name="dropdown1"></slot>
     </ul>
-    <slot name="navsearchcomp"></slot>
+    <slot name="search"></slot>
   </div>
 </nav>
 </template>

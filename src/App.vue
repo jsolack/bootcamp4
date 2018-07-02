@@ -1,12 +1,14 @@
 <template>
   <div id="app">
     <navbarcomp>
-      <navlinkcomp title="Home" address="/"></navlinkcomp>
-      <navlinkcomp title="Reporting" address="/nope"></navlinkcomp>
-      <navlinkcomp title="Search with Google" address="http://www.google.com"></navlinkcomp>
-      <navdropdowncomp></navdropdowncomp>
-      <navsearchcomp></navsearchcomp>
+      <navlinkcomp slot="link1" title="Home" address="/"></navlinkcomp>
+      <navlinkcomp slot="link2" title="Reporting" address="/reporting"></navlinkcomp>
+      <navlinkcomp slot="link3" title="About" address="/about"></navlinkcomp>
+      <navlinkcomp slot="link4" title="Busted" address="/nothere"></navlinkcomp>
+      <navdropdowncomp slot="dropdown1"></navdropdowncomp>
+      <navsearchcomp slot='search'></navsearchcomp>
     </navbarcomp>
+  <router-view/>
   </div>
 </template>
 

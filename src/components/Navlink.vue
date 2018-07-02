@@ -1,6 +1,6 @@
 <template slot='navlinkcomp'>
   <li class="nav-item active">
-    <a class="nav-link" :href="address">{{title}}</a>
+    <router-link class="nav-link"  :to="address">{{title}}</router-link>
   </li>
 </template>
 
